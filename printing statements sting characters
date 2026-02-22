@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+
+int main() {
+    char ch;
+    char s[100];
+    char sen[100];
+    
+    // Read character
+    scanf("%c", &ch);
+    
+    // Consume newline after character input
+    scanf("\n");
+    
+    // Read string (until space)
+    scanf("%s", s);
+    
+    // Consume newline after string input  
+    scanf("\n");
+    
+    // Read sentence until newline
+    scanf("%[^\n]%*c", sen);
+    
+    // Print outputs
+    printf("%c\n", ch);
+    printf("%s\n", s);
+    printf("%s\n", sen);
+    
+    return 0;
+} 
